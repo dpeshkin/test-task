@@ -6,6 +6,10 @@ const gulp = require("gulp"),
   gulpWebpack = require("gulp-webpack"),
   webpack = require("webpack"),
   webpackConfig = require("./webpack.config.js"),
+  svgSprite = require("gulp-svg-sprites"),
+  svgmin = require("gulp-svgmin"),
+  cheerio = require("gulp-cheerio"),
+  replace = require("gulp-replace"),
   del = require("del");
 
 //paths
@@ -32,7 +36,7 @@ const paths = {
     dest: "docs/assets/fonts/"
   },
   icons: {
-    src: "src/svg-icons/*.svg",
+    src: "src/icons/*.svg",
     dest: "src/images/"
   }
 };
@@ -90,12 +94,43 @@ gulp.task("fonts", function() {
   return gulp.src(paths.fonts.src).pipe(gulp.dest(paths.fonts.dest));
 });
 
+//SVG Sprite
+gulp.task("sprite", function() {
+  return gulp
+    .src(paths.icons.src)
+    .pipe(
+      svgmin({
+        js2svg: {
+          pretty: true
+        }
+      })
+    )
+    .pipe(
+      cheerio({
+        run: function($) {
+          $("[fill]").removeAttr("fill");
+          $("[stroke]").removeAttr("stroke");
+          $("[style]").removeAttr("style");
+        },
+        parserOptions: { xmlMode: true }
+      })
+    )
+    .pipe(replace("&gt;", ">"))
+    .pipe(
+      svgSprite({
+        mode: "symbols",
+        svg: {
+          symbols: "icons/sprite.svg"
+        }
+      })
+    )
+    .pipe(gulp.dest(paths.icons.dest));
+});
+
 const watch = () => {
   gulp.watch(paths.scripts.src, ["scripts"]);
   gulp.watch(paths.styles.src, ["styles"]);
   gulp.watch(paths.templates.src, ["html"]);
-  gulp.watch(paths.images.src, ["images"]);
-  gulp.watch(paths.fonts.src, ["fonts"]);
 };
 
 gulp.task("default", ["server", "styles", "html", "images", "fonts"], watch());

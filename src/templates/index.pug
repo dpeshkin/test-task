@@ -1,15 +1,39 @@
 doctype html
 html
-    head
-        meta(charset="utf-8")
-        meta(content="width=device-width, initial-scale=1" name="viewport")
-        meta(content="ie=edge" http-equiv="x-ua-compatible")
-        block title
-            title
-        meta(name="description", content=desc)
-        link(rel='stylesheet' href='assets/styles/css.css')
+	head
+		meta(charset="utf-8")
+		meta(content="width=device-width, initial-scale=1" name="viewport")
+		meta(content="ie=edge" http-equiv="x-ua-compatible")
+		block title
+			title
+		meta(name="description", content=desc)
+		link(rel='stylesheet' href='assets/styles/css.css')
 
-    body
-        h1 helloworld
+	body
+		section.main
+			.container
+				.topline
+					.topline__left
+						.logo
+							.logo__image
+								img(src="assets/images/logo-black.png" alt="logo").responsive-img
+							.logo__header Услуги строительной техники
+					.topline__right
+						.contacts
+							.contacts__adress г. Екатеринбург,  ул.Маяковского, 25
+							.contacts__phone +7 (343) 222-20-17
+				.menu
+					.menu__home
+						a(href="#")
+							img(src="assets/images/small-logo.png").responsive-img
+					.menu__nav
+						nav.nav
+							ul.nav__list
+								li.nav__item.nav__item_active Каталог техники
+								li.nav__item Услуги
+								li.nav__item Выполненные работы
+								li.nav__item О компании
+								li.nav__item Контакты
+					
 
-        script(src='assets/scripts/bundle.js' defer)
+	script(src='assets/scripts/bundle.js' defer)

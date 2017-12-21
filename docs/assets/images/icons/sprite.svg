@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+	
+		<symbol id="arrow-bottom" viewBox="0 0 21 21">
+			<image data-name="strelka копия 3" width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDBYBDgup3Rn0AAAAzklEQVQoz73SMUpDQRAA0Gf4qKSIhRAQC/EQWgW8gUTwCkIkdtaWnsHSEwjWsYigbU4RSBEIqJWEyNjE73e/6DY6W83ug53ZnRUXzuXEsNCykUU3G+ZZkNdGJsTf0sUP5u0rnTl2+w27cfbZ+KUQnkHXSJRrpIvtZTb4oE/WQFPfWBjra4LdlM4dlZe2nWqXWS+lYeHKVlLpjuuynAoNYeKkAnumlbOEhvBgH3sek/1BUXuejjv3DupDVKe0HP7/DGTR1Uy5XnhZ/v9vMXsHMAxayJwGgPQAAAAASUVORK5CYII="></image>
+		</symbol>
+	
+		<symbol id="arrow-left" viewBox="0 0 30 31">
+			<image data-name="strelka копия" width="30" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAQAAABaZbWMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDBYBDCw+4c4dAAAArUlEQVQ4y2NkmMlANmBk+E++ZibytQ5ZzSxYRQsYjkBZExhs8Gn/jwUehssaMPzBqgICcQh7w7VPJl3zeQZmqGYehiekav7PEAW3O4p0zbcZ2ODaD5Oq+T9DJlyzLsNPUjU/YeCBa28nVfN/hgq4ZuzBhlfzbaT0UEdHm5H93Et+aONKpLSJZwpSGEVp25tA8sCjGZGfVXAkTDyaEaXHFnzpYLTcJhEwMqSRrxkAL0e/ZizaTXMAAAAASUVORK5CYII="></image>
+		</symbol>
+	
+		<symbol id="arrow-right" viewBox="0 0 30 31">
+			<image width="30" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAQAAABaZbWMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDBYBCwKtdlUVAAAAsklEQVQ4y2NkSGMgGzAy/CdfMxP5Woep5q0MjFBoi13Bf5zwJ4MKXNVhrCrwaG6Ha/XGoQKn1icMPFCtzAznSdUcBbc3CqcaHMKH4VrZGG6TpvkPgwFccyaeUMEq2AvXysPwhDTNiKBiYKjAoxWr5jqkVHCbVM0U2YycPEj283+Gnwy65Ic2RfFMYQqjMG3/Z5hMfq5CTaRY8zP+ovcIQwGUZcMwAVN6tNwmEbAwzCJfMwD/pKiG5mGvzQAAAABJRU5ErkJggg=="></image>
+		</symbol>
+	
+		<symbol id="arrow-top" viewBox="0 0 21 21">
+			<image data-name="strelka копия 2" width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDBYBDSewKCbUAAAAyUlEQVQoz73SsQqCQBzH8W8mFQ42BEI0RK/QGzg4Z/QMQeFzODY3trQbjc01+hRCQxCki2GCDZldSnGTd9Px//C7P/+7Bh4mMmul0qMrRXWFuxSERJGEQH00ZE8kQ09YTLA4VvGBrNgXFkJlzlmouSLdMCzF9FmTVuknz2CJUZymJGU6AkDDISAjwEEDoM2tTAeAjS9052PnE8nIcNX8mhgbk9lXp2M8dmyJ0cUJpEJaeT9eqe+5Nv88k1r3H/hJO5KypXIllKLREzgPX0ukrlzMAAAAAElFTkSuQmCC"></image>
+		</symbol>
+	
+		<symbol id="check" viewBox="0 0 18 14">
+			<defs><style>.cls-1{font-size:20px;font-family:FontAwesome}</style></defs><text id="_" data-name="" class="cls-1" x="-.999" y="14"></text>
+		</symbol>
+	
+		<symbol id="close" viewBox="0 0 14 14">
+			<defs><style>.cls-1{font-size:20px;font-family:FontAwesome}</style></defs><text id="_" data-name="" class="cls-1" x="-.999" y="13.001"></text>
+		</symbol>
+	
+		<symbol id="pencil" viewBox="0 0 17 18">
+			<defs><style>.cls-1{font-size:20px;font-family:FontAwesome}</style></defs><text id="_" data-name="" class="cls-1" x=".001" y="16.001"></text>
+		</symbol>
+	
+</svg>

@@ -1,0 +1,30 @@
+@mixin font-face($name, $font-files, $format, $weight: false, $style: normal) {
+  @font-face {
+    font-family: quote($name);
+    src: url($font-files) format(quote($format));
+    @if $weight {
+      font-weight: $weight;
+    }
+    @if $style {
+      font-style: $style;
+    }
+  }
+}
+
+@mixin laptops {
+  @media screen and (max-width: $laptops) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}

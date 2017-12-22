@@ -1,0 +1,23 @@
+.service {
+  display: flex;
+}
+.service__img {
+  width: 160px;
+  margin-right: 50px;
+  flex-shrink: 0;
+}
+
+.service__desc {
+  padding-top: 15px;
+}
+
+.service__header {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.service__text p {
+  margin-bottom: 0;
+}

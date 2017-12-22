@@ -1,0 +1,18 @@
+.breadcrumbs-item {
+  display: inline-block;
+  a {
+    color: $color-orange;
+    text-decoration: none;
+  }
+  &::after {
+    content: " /";
+  }
+  &:last-child {
+    a {
+      color: $color-black;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}

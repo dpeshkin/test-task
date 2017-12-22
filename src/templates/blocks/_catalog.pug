@@ -1,0 +1,52 @@
+section.catalog
+  .container
+    .catalog__breadcrumbs
+      .breadcrumbs
+        ul.breadcrumbs-list
+          li.breadcrumbs-item 
+            a(href="#") Главная
+          li.breadcrumbs-item
+            a(href="#") Каталог
+          li.breadcrumbs-item 
+            a(href="#") Название товара
+    .catalog__item
+      .item
+        .item__photo
+          img(src="assets/images/excavator.jpg", alt="JCB").responsive-img
+        .item__description
+          .item__name JCB 4CX Super
+          .item__props
+            .props
+              ul.props__list
+                li.props__item
+                  a(href='#').props__header
+                    span Характеристики
+                    .props__icon
+                      +icon("icon_fill_black","arrow-bottom")
+                  ul.sub-props__list
+                    li.sub-props__item
+                      input(type='checkbox', id='checkbox-1', class='sub-props__checkbox')
+                      label(for='checkbox-1')
+                        .checkbox-fake 
+                      span Характеристика 1
+                    li.sub-props__item
+                      input(type='checkbox', id='checkbox-2', class='sub-props__checkbox')
+                      label(for='checkbox-2')
+                        .checkbox-fake 
+                      span Характеристика 2
+                    li.sub-props__item
+                      input(type='checkbox', id='checkbox-3', class='sub-props__checkbox')
+                      label(for='checkbox-3')
+                        .checkbox-fake 
+                      span Характеристика 3
+                li.props__item
+                    a(href='#').props__header
+                      span Информация
+                      .props__icon
+                        +icon("icon_fill_black","arrow-top")
+          .item__price
+            .price 0 Р.
+            button.button Заказать
+
+
+        

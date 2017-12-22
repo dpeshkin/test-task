@@ -10,8 +10,8 @@
   </head>
   <body>
     <section class="main">
-      <div class="container">
-        <div class="topline">
+      <div class="topline">
+        <div class="container container_flex-aic">
           <div class="topline__left">
             <div class="logo">
               <div class="logo__image"><img class="responsive-img" src="assets/images/logo-black.png" alt="logo"></div>
@@ -25,18 +25,85 @@
             </div>
           </div>
         </div>
-        <div class="menu">
-          <div class="menu__home"><a href="#"><img class="responsive-img" src="assets/images/small-logo.png"></a></div>
+      </div>
+      <div class="menu">
+        <div class="container container_flex-aic">
+          <div class="menu__home"><a class="link" href="#"><img class="responsive-img" src="assets/images/small-logo.png"></a></div>
           <div class="menu__nav">
             <nav class="nav">
               <ul class="nav__list">
-                <li class="nav__item nav__item_active">Каталог техники</li>
-                <li class="nav__item">Услуги</li>
-                <li class="nav__item">Выполненные работы</li>
-                <li class="nav__item">О компании</li>
-                <li class="nav__item">Контакты</li>
+                <li class="nav__item nav__item_active"> <a href="#">Каталог техники</a></li>
+                <li class="nav__item"> <a href="">Услуги</a></li>
+                <li class="nav__item"><a href="">Выполненные работы</a></li>
+                <li class="nav__item"><a href="">О компании</a></li>
+                <li class="nav__item"><a href="">Контакты</a></li>
               </ul>
             </nav>
+          </div>
+        </div>
+      </div>
+      <div class="slider"><img class="responsive-img" src="assets/images/slider-image-1.jpg"></div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__breadcrumbs">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-item"> <a href="#">Главная</a></li>
+              <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+              <li class="breadcrumbs-item"> <a href="#">Название товара</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog__item">
+          <div class="item">
+            <div class="item__photo"><img class="responsive-img" src="assets/images/excavator.jpg" alt="JCB"></div>
+            <div class="item__description">
+              <div class="item__name">JCB 4CX Super</div>
+              <div class="item__props">
+                <div class="props">
+                  <ul class="props__list">
+                    <li class="props__item"><a class="props__header" href="#"><span>Характеристики</span>
+                        <div class="props__icon">
+                          <svg class="icon icon_fill_black">
+                            <use xlink:href="assets/images/icons/sprite.svg#arrow-bottom"></use>
+                          </svg>
+                        </div></a>
+                      <ul class="sub-props__list">
+                        <li class="sub-props__item">
+                          <input class="sub-props__checkbox" type="checkbox" id="checkbox-1">
+                          <label for="checkbox-1">
+                            <div class="checkbox-fake"> </div>
+                          </label><span>Характеристика 1</span>
+                        </li>
+                        <li class="sub-props__item">
+                          <input class="sub-props__checkbox" type="checkbox" id="checkbox-2">
+                          <label for="checkbox-2">
+                            <div class="checkbox-fake"> </div>
+                          </label><span>Характеристика 2</span>
+                        </li>
+                        <li class="sub-props__item">
+                          <input class="sub-props__checkbox" type="checkbox" id="checkbox-3">
+                          <label for="checkbox-3">
+                            <div class="checkbox-fake"> </div>
+                          </label><span>Характеристика 3</span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="props__item"><a class="props__header" href="#"><span>Информация</span>
+                        <div class="props__icon">
+                          <svg class="icon icon_fill_black">
+                            <use xlink:href="assets/images/icons/sprite.svg#arrow-top"></use>
+                          </svg>
+                        </div></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item__price">
+                <div class="price">0 Р.</div>
+                <button class="button">Заказать</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

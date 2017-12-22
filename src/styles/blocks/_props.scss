@@ -1,0 +1,38 @@
+.props__header {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: $large-text-size;
+  display: flex;
+  align-items: center;
+  border: solid 1px #cdcdcd;
+  padding: 10px 20px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+  color: $color-black;
+  margin-bottom: 30px;
+}
+.props__icon {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+}
+
+.sub-props__list {
+  margin-bottom: 30px;
+}
+
+.sub-props__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.sub-props__checkbox {
+  display: none;
+  &:checked + label .checkbox-fake {
+    &::after {
+      display: block;
+    }
+  }
+}

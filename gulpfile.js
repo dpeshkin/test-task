@@ -24,7 +24,7 @@ const paths = {
     dest: "docs/assets/scripts/"
   },
   templates: {
-    src: "src/templates/*.pug",
+    src: "src/templates/",
     dest: "docs/assets/"
   },
   images: {
@@ -65,7 +65,7 @@ gulp.task("server", function() {
 // PUG
 gulp.task("html", function() {
   return gulp
-    .src(paths.templates.src)
+    .src(paths.templates.src + "*.pug")
     .pipe(pug({ pretty: true }))
     .pipe(gulp.dest(paths.root));
 });
@@ -130,7 +130,7 @@ gulp.task("sprite", function() {
 const watch = () => {
   gulp.watch(paths.scripts.src, ["scripts"]);
   gulp.watch(paths.styles.src, ["styles"]);
-  gulp.watch(paths.templates.src, ["html"]);
+  gulp.watch(paths.templates.src + "**/*.pug", ["html"]);
 };
 
 gulp.task("default", ["server", "styles", "html", "images", "fonts"], watch());

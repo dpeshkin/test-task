@@ -1,0 +1,18 @@
+.nav__item {
+  margin-right: 40px;
+  display: inline-block;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-gray;
+}
+
+.nav__item_active a {
+  color: $color-black;
+}

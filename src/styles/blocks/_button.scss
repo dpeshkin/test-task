@@ -17,3 +17,16 @@
   padding: 0;
   margin-right: 20px;
 }
+
+.button_delete {
+  background-image: url(../images/icons/close.svg);
+  background-size: cover;
+}
+.button_change {
+  background-image: url(../images/icons/pencil.svg);
+  background-size: cover;
+}
+.button_add {
+  background-image: url(../images/icons/check.svg);
+  background-size: cover;
+}

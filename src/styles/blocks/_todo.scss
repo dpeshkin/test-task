@@ -13,12 +13,24 @@
 }
 .task__item {
   margin-bottom: 35px;
+  .task__input {
+    display: none;
+  }
+
+  &_editable {
+    .task__input {
+      display: inline-block;
+    }
+    .task__label {
+      display: none;
+    }
+  }
 }
+
 .task__label {
   margin-right: 20px;
 }
 .task__input {
-  display: none;
   padding: 5px 10px;
   font-size: $medium-text-size;
   font-weight: 400;
@@ -27,10 +39,6 @@
   border-width: 1px;
   border-color: rgb(83, 83, 83);
   box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
-}
-
-.task__input_new {
-  display: block;
 }
 
 .new-task {

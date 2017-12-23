@@ -163,38 +163,30 @@
     </section>
     <section class="todo">
       <div class="container">
-        <div class="todo__header">Заголовок</div>
-        <div class="todo__task-list">
-          <ol class="task__list">
-            <li class="task__item">
-              <label class="task__label">Задача 1</label>
-              <input class="task__input" type="text" value="Задача 1">
-              <button class="button-icon button_change">
-                <svg class="icon icon_fill_black">
-                  <use xlink:href="assets/images/icons/sprite.svg#pencil"></use>
-                </svg>
-              </button>
-              <button class="button-icon button_delete">
-                <svg class="icon icon_fill_black">
-                  <use xlink:href="assets/images/icons/sprite.svg#close"></use>
-                </svg>
-              </button>
-            </li>
-          </ol>
-        </div>
-        <div class="todo__new-task">
-          <div class="new-task">
-            <input class="task__input task__input_new" type="text" value="Задача 1">
-            <button class="button-icon button_add">
-              <svg class="icon icon_fill_black">
-                <use xlink:href="assets/images/icons/sprite.svg#check"></use>
-              </svg>
-            </button>
-            <button class="button-icon button_delete">
-              <svg class="icon icon_fill_black">
-                <use xlink:href="assets/images/icons/sprite.svg#close"></use>
-              </svg>
-            </button>
+        <div class="todo">
+          <div class="todo__header">Заголовок</div>
+          <div class="todo__task-list">
+            <ol class="task__list">
+              <li class="task__item">
+                <label class="task__label">Задача 1</label>
+                <input class="task__input" type="text" value="Задача 1">
+                <button class="button-icon button_change"></button>
+                <button class="button-icon button_delete"></button>
+              </li>
+              <li class="task__item">
+                <label class="task__label">Задача 2</label>
+                <input class="task__input" type="text" value="Задача 2">
+                <button class="button-icon button_change"></button>
+                <button class="button-icon button_delete"></button>
+              </li>
+            </ol>
+          </div>
+          <div class="todo__new-task">
+            <div class="new-task">
+              <input class="task__input" type="text">
+              <button class="button-icon button_add"></button>
+              <button class="button-icon button_delete"></button>
+            </div>
           </div>
         </div>
       </div>

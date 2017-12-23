@@ -690,6 +690,18 @@ label {
   padding: 0;
   margin-right: 20px; }
 
+.button_delete {
+  background-image: url(../images/icons/close.svg);
+  background-size: cover; }
+
+.button_change {
+  background-image: url(../images/icons/pencil.svg);
+  background-size: cover; }
+
+.button_add {
+  background-image: url(../images/icons/check.svg);
+  background-size: cover; }
+
 .services {
   padding-top: 50px; }
 
@@ -756,12 +768,17 @@ label {
 
 .task__item {
   margin-bottom: 35px; }
+  .task__item .task__input {
+    display: none; }
+  .task__item_editable .task__input {
+    display: inline-block; }
+  .task__item_editable .task__label {
+    display: none; }
 
 .task__label {
   margin-right: 20px; }
 
 .task__input {
-  display: none;
   padding: 5px 10px;
   font-size: 20px;
   font-weight: 400;
@@ -771,9 +788,6 @@ label {
   border-color: #535353;
   -webkit-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
   box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35); }
-
-.task__input_new {
-  display: block; }
 
 .new-task {
   display: -webkit-box;

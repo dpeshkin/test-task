@@ -16,16 +16,16 @@
 			<image data-name="strelka копия 2" width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhDBYBDSewKCbUAAAAyUlEQVQoz73SsQqCQBzH8W8mFQ42BEI0RK/QGzg4Z/QMQeFzODY3trQbjc01+hRCQxCki2GCDZldSnGTd9Px//C7P/+7Bh4mMmul0qMrRXWFuxSERJGEQH00ZE8kQ09YTLA4VvGBrNgXFkJlzlmouSLdMCzF9FmTVuknz2CJUZymJGU6AkDDISAjwEEDoM2tTAeAjS9052PnE8nIcNX8mhgbk9lXp2M8dmyJ0cUJpEJaeT9eqe+5Nv88k1r3H/hJO5KypXIllKLREzgPX0ukrlzMAAAAAElFTkSuQmCC"></image>
 		</symbol>
 	
-		<symbol id="check" viewBox="0 0 18 14">
-			<defs><style>.cls-1{font-size:20px;font-family:FontAwesome}</style></defs><text id="_" data-name="" class="cls-1" x="-.999" y="14"></text>
+		<symbol id="check" viewBox="0 0 1792 1792">
+			<path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path>
 		</symbol>
 	
-		<symbol id="close" viewBox="0 0 14 14">
-			<defs><style>.cls-1{font-size:20px;font-family:FontAwesome}</style></defs><text id="_" data-name="" class="cls-1" x="-.999" y="13.001"></text>
+		<symbol id="close" viewBox="0 0 1792 1792">
+			<path d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"></path>
 		</symbol>
 	
-		<symbol id="pencil" viewBox="0 0 17 18">
-			<defs><style>.cls-1{font-size:20px;font-family:FontAwesome}</style></defs><text id="_" data-name="" class="cls-1" x=".001" y="16.001"></text>
+		<symbol id="pencil" viewBox="0 0 1792 1792">
+			<path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832H128v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z"></path>
 		</symbol>
 	
 </svg>

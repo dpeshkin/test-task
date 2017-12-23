@@ -1,0 +1,39 @@
+.todo {
+  padding: 60px 0 100px;
+}
+.todo__header {
+  text-transform: uppercase;
+  font-size: $large-text-size;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.task__list {
+  font-weight: 700;
+  font-size: $large-text-size;
+}
+.task__item {
+  margin-bottom: 35px;
+}
+.task__label {
+  margin-right: 20px;
+}
+.task__input {
+  display: none;
+  padding: 5px 10px;
+  font-size: $medium-text-size;
+  font-weight: 400;
+  margin-right: 30px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: rgb(83, 83, 83);
+  box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
+.task__input_new {
+  display: block;
+}
+
+.new-task {
+  display: flex;
+  align-items: center;
+}

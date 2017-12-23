@@ -415,7 +415,7 @@ img {
 
 html,
 body {
-  font-family: PT sans, Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   width: 100%;
@@ -536,6 +536,27 @@ label {
 
 .nav__item_active a {
   color: #000000; }
+
+.nav__list_footer .nav__item {
+  margin-right: 30px; }
+
+.nav__list_footer .nav__item a {
+  text-transform: none; }
+
+.nav__list_footer .nav__item_active a {
+  color: #fff;
+  position: relative; }
+  .nav__list_footer .nav__item_active a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 5px;
+    height: 5px;
+    border-right: 1px solid #f88e11;
+    border-bottom: 1px solid #f88e11;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 .catalog {
   padding-top: 40px; }
@@ -661,6 +682,14 @@ label {
   font-size: 12px;
   cursor: pointer; }
 
+.button-icon {
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 20px; }
+
 .services {
   padding-top: 50px; }
 
@@ -711,3 +740,80 @@ label {
 
 .service__text p {
   margin-bottom: 0; }
+
+.todo {
+  padding: 60px 0 100px; }
+
+.todo__header {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px; }
+
+.task__list {
+  font-weight: 700;
+  font-size: 24px; }
+
+.task__item {
+  margin-bottom: 35px; }
+
+.task__label {
+  margin-right: 20px; }
+
+.task__input {
+  display: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 30px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #535353;
+  -webkit-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35); }
+
+.task__input_new {
+  display: block; }
+
+.new-task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.map {
+  height: 436px;
+  width: 100%; }
+
+.footer {
+  height: 110px;
+  background-color: #000000;
+  color: #818180; }
+
+.footer__logo {
+  width: 147px;
+  margin-right: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer__nav {
+  width: 375px; }
+
+.footer__copyright {
+  margin-left: auto;
+  width: 132px;
+  color: #d3d3d3;
+  text-align: right;
+  white-space: no-wrap; }
+
+.footer__link {
+  color: #d3d3d3;
+  padding-left: 40px;
+  background: url("../images/itex-logo.png") center left;
+  background-repeat: no-repeat; }
+
+.copy {
+  margin-bottom: 10px; }

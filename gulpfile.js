@@ -133,4 +133,8 @@ const watch = () => {
   gulp.watch(paths.templates.src + "**/*.pug", ["html"]);
 };
 
-gulp.task("default", ["server", "styles", "html", "images", "fonts"], watch());
+gulp.task(
+  "default",
+  ["server", "styles", "html", "scripts", "images", "fonts"],
+  watch()
+);

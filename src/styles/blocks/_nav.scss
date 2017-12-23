@@ -16,3 +16,27 @@
 .nav__item_active a {
   color: $color-black;
 }
+
+.nav__list_footer {
+  .nav__item {
+    margin-right: 30px;
+  }
+  .nav__item a {
+    text-transform: none;
+  }
+  .nav__item_active a {
+    color: #fff;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -15px;
+      width: 5px;
+      height: 5px;
+      border-right: 1px solid #f88e11;
+      border-bottom: 1px solid #f88e11;
+      transform: rotate(-45deg);
+    }
+  }
+}

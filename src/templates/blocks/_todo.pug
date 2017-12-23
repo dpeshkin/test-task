@@ -1,0 +1,19 @@
+section.todo
+  .container
+    .todo__header Заголовок
+    .todo__task-list
+      ol.task__list
+        li.task__item
+          label.task__label Задача 1
+          input(type="text" value="Задача 1").task__input
+          button.button-icon.button_change
+            +icon("icon_fill_black","pencil")
+          button.button-icon.button_delete
+            +icon("icon_fill_black","close")
+    .todo__new-task
+      .new-task
+        input(type="text" value="Задача 1").task__input.task__input_new
+        button.button-icon.button_add
+          +icon("icon_fill_black","check")
+        button.button-icon.button_delete
+          +icon("icon_fill_black","close")

@@ -1,0 +1,32 @@
+.footer {
+  height: 110px;
+  background-color: $color-black;
+  color: $color-gray;
+}
+.footer__logo {
+  width: 147px;
+  margin-right: 95px;
+  display: flex;
+}
+.footer__nav {
+  width: 375px;
+}
+
+.footer__copyright {
+  margin-left: auto;
+  width: 132px;
+  color: #d3d3d3;
+  text-align: right;
+  white-space: no-wrap;
+}
+
+.footer__link {
+  color: #d3d3d3;
+  padding-left: 40px;
+  background: url("../images/itex-logo.png") center left;
+  background-repeat: no-repeat;
+}
+
+.copy {
+  margin-bottom: 10px;
+}

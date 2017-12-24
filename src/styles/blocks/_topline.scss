@@ -1,7 +1,20 @@
 .topline {
   height: 94px;
+  @include phones() {
+    height: auto;
+  }
 }
 
 .topline__right {
   margin-left: auto;
+  @include phones() {
+    margin: 0 auto;
+  }
+}
+
+.topline__container {
+  @include phones() {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

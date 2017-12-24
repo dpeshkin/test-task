@@ -1,3 +1,6 @@
 .contacts {
   text-align: right;
+  @include phones() {
+    text-align: center;
+  }
 }

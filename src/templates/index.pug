@@ -11,14 +11,14 @@ html
 		link(rel='stylesheet' href='assets/styles/css.css')
 
 	body
-		include blocks/_main.pug
-		include blocks/_catalog.pug
-		include blocks/_services.pug
-		include blocks/_todo.pug
-		include blocks/_map.pug
-		include blocks/_footer.pug
+		.wrapper
+			include blocks/_main.pug
+			include blocks/_catalog.pug
+			include blocks/_services.pug
+			include blocks/_todo.pug
+			include blocks/_map.pug
+			include blocks/_footer.pug
 					
 					
 	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
-	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 	script(src='assets/scripts/bundle.js' defer)

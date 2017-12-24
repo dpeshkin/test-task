@@ -2,6 +2,10 @@
   display: flex;
   background-color: #fff;
   height: 50px;
+  @include tablets() {
+    height: auto;
+    padding: 10px 0;
+  }
 }
 
 .menu__home {

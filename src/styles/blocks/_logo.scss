@@ -11,4 +11,7 @@
   text-transform: uppercase;
   font-weight: 700;
   max-width: 160px;
+  @include phones() {
+    text-align: right;
+  }
 }

@@ -31,7 +31,6 @@
     }
   }
 }
-
 .task__label {
   margin-right: 20px;
 }
@@ -47,6 +46,10 @@
   box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
   @include tablets() {
     width: auto;
+    max-width: 200px;
+  }
+  @include phones() {
+    max-width: 150px;
   }
 }
 

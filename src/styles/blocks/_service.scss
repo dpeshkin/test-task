@@ -1,14 +1,25 @@
 .service {
   display: flex;
+  @include phones() {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .service__img {
   width: 160px;
   margin-right: 50px;
   flex-shrink: 0;
+  @include phones() {
+    margin-right: 0;
+  }
 }
 
 .service__desc {
   padding-top: 15px;
+  @include phones() {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .service__header {
@@ -17,7 +28,15 @@
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-
+.service__text {
+  @include phones() {
+    display: flex;
+    justify-content: center;
+  }
+}
 .service__text p {
   margin-bottom: 0;
+  @include phones() {
+    max-width: 300px;
+  }
 }

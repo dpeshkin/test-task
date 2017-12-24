@@ -1,7 +1,7 @@
 .slider
   .slider__nav-wrapper
     ul.slider__nav
-    
+
   .slider__controls
     .control.control__left
       a(href="")
@@ -10,11 +10,24 @@
   
   .slider__wrapper
     .slider__list
-      .slider__item.active
-        img(src="assets/images/slider-image-1.jpg").responsive-img
-      .slider__item
-        img(src="assets/images/slider-image-1.jpg").responsive-img
-      .slider__item
-        img(src="assets/images/slider-image-1.jpg").responsive-img
+      .slider__item(style="background-image: url(assets/images/slider-image-1.jpg)").active
+        .slider__text-wrapper
+          div.slider__text Профессиаональная техника
+          div.slider__text В аренду от
+            span.slider__text_large 15000
+          div.slider__text_under руб/сутки
+      .slider__item(style="background-image: url(assets/images/slider-image-1.jpg)")
+        .slider__text-wrapper
+          div.slider__text Вертолеты и самолеты
+          div.slider__text В аренду от
+            span.slider__text_large 500
+          div.slider__text_under руб/сутки
+        
+      .slider__item(style="background-image: url(assets/images/slider-image-1.jpg)")
+        .slider__text-wrapper
+          div.slider__text кабелеукладчики и штроборезы
+          div.slider__text В аренду от
+            span.slider__text_large 5000
+          div.slider__text_under руб/сутки
   
   

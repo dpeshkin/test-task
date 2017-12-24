@@ -16,14 +16,12 @@
 .services__list {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: center;
+  margin: 0 -15px;
 }
 
 .services__item {
   width: 455px;
   min-width: 350px;
-  margin: 35px 30px 35px 0;
-  &:nth-child(2n) {
-    margin-right: 0;
-  }
+  margin: 35px 15px 35px 15px;
 }

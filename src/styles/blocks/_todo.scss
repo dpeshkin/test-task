@@ -1,6 +1,11 @@
 .todo-list {
   padding: 60px 0 100px;
 }
+.todo {
+  @include tablets {
+    margin: 0 auto;
+  }
+}
 .todo__header {
   text-transform: uppercase;
   font-size: $large-text-size;
@@ -31,6 +36,7 @@
   margin-right: 20px;
 }
 .task__input {
+  width: 536px;
   padding: 5px 10px;
   font-size: $medium-text-size;
   font-weight: 400;
@@ -39,6 +45,9 @@
   border-width: 1px;
   border-color: rgb(83, 83, 83);
   box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  @include tablets() {
+    width: auto;
+  }
 }
 
 .new-task {

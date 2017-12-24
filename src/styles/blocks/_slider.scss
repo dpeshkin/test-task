@@ -1,5 +1,5 @@
 .slider {
-  max-height: 550px;
+  height: 550px;
   position: relative;
 }
 .slider__controls {
@@ -31,23 +31,27 @@
 
 .slider__wrapper {
   overflow-x: hidden;
+  height: 100%;
 }
 .slider__list {
   white-space: nowrap;
   font-size: 0;
   transition: all 1s;
+  height: 100%;
 }
 
 .slider__item {
   display: inline-block;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .slider__nav-wrapper {
+  @extend .container;
   position: relative;
-  max-width: 960px;
-  height: 0px;
-  width: 100%;
-  margin: 0 auto;
   z-index: 1;
 }
 
@@ -69,4 +73,28 @@
   display: block;
   width: 15px;
   height: 15px;
+}
+.slider__text-wrapper {
+  white-space: normal;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  z-index: 1;
+  display: block;
+}
+.slider__text {
+  display: flex;
+  text-transform: uppercase;
+  &_large {
+    margin-left: 20px;
+    font-size: 60px;
+    color: #fff;
+    line-height: 60px;
+  }
+  &_under {
+    font-size: $large-text-size;
+    text-align: right;
+  }
 }

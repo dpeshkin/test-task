@@ -467,14 +467,14 @@ label {
 .main {
   background-color: #ffbb02; }
 
-.container {
+.container, .slider__nav-wrapper {
   width: 100%;
   max-width: 960px;
   padding: 0 10px;
-  margin: 0 auto;
-  height: 100%; }
+  margin: 0 auto; }
 
 .container_flex-aic {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,7 +520,9 @@ label {
 
 .menu__home {
   margin-right: 45px;
-  width: 35px; }
+  width: 35px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
 
 .link {
   display: -webkit-box;
@@ -746,14 +748,15 @@ label {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100%; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 -15px; }
 
 .services__item {
   width: 455px;
   min-width: 350px;
-  margin: 35px 30px 35px 0; }
-  .services__item:nth-child(2n) {
-    margin-right: 0; }
+  margin: 35px 15px 35px 15px; }
 
 .service {
   display: -webkit-box;
@@ -781,6 +784,10 @@ label {
 .todo-list {
   padding: 60px 0 100px; }
 
+@media screen and (max-width: 768px) {
+  .todo {
+    margin: 0 auto; } }
+
 .todo__header {
   text-transform: uppercase;
   font-size: 24px;
@@ -804,6 +811,7 @@ label {
   margin-right: 20px; }
 
 .task__input {
+  width: 536px;
   padding: 5px 10px;
   font-size: 20px;
   font-weight: 400;
@@ -813,6 +821,9 @@ label {
   border-color: #535353;
   -webkit-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
   box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35); }
+  @media screen and (max-width: 768px) {
+    .task__input {
+      width: auto; } }
 
 .new-task {
   display: -webkit-box;
@@ -830,23 +841,50 @@ label {
   height: 110px;
   background-color: #000000;
   color: #818180; }
+  @media screen and (max-width: 768px) {
+    .footer {
+      height: auto;
+      padding: 20px 0; } }
 
 .footer__logo {
   width: 147px;
   margin-right: 95px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-ordinal-group: 6;
+  -ms-flex-order: 5;
+  order: 5; }
+  @media screen and (max-width: 768px) {
+    .footer__logo {
+      margin: auto; } }
 
 .footer__nav {
-  width: 375px; }
+  width: 375px;
+  -webkit-box-ordinal-group: 8;
+  -ms-flex-order: 7;
+  order: 7; }
+  @media screen and (max-width: 768px) {
+    .footer__nav {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px; } }
 
 .footer__copyright {
+  -webkit-box-ordinal-group: 11;
+  -ms-flex-order: 10;
+  order: 10;
   margin-left: auto;
   width: 132px;
   color: #d3d3d3;
   text-align: right;
   white-space: no-wrap; }
+  @media screen and (max-width: 768px) {
+    .footer__copyright {
+      margin: auto; } }
 
 .footer__link {
   color: #d3d3d3;
@@ -857,8 +895,12 @@ label {
 .copy {
   margin-bottom: 10px; }
 
+.footer__container {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
 .slider {
-  max-height: 550px;
+  height: 550px;
   position: relative; }
 
 .slider__controls {
@@ -892,23 +934,26 @@ label {
   background-size: cover; }
 
 .slider__wrapper {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%; }
 
 .slider__list {
   white-space: nowrap;
   font-size: 0;
   -webkit-transition: all 1s;
-  transition: all 1s; }
+  transition: all 1s;
+  height: 100%; }
 
 .slider__item {
-  display: inline-block; }
+  display: inline-block;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center; }
 
 .slider__nav-wrapper {
   position: relative;
-  max-width: 960px;
-  height: 0px;
-  width: 100%;
-  margin: 0 auto;
   z-index: 1; }
 
 .slider__nav {
@@ -926,3 +971,27 @@ label {
   display: block;
   width: 15px;
   height: 15px; }
+
+.slider__text-wrapper {
+  white-space: normal;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  z-index: 1;
+  display: block; }
+
+.slider__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase; }
+  .slider__text_large {
+    margin-left: 20px;
+    font-size: 60px;
+    color: #fff;
+    line-height: 60px; }
+  .slider__text_under {
+    font-size: 24px;
+    text-align: right; }

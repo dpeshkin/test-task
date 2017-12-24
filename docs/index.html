@@ -63,39 +63,39 @@
               <div class="item__props">
                 <div class="props">
                   <ul class="props__list">
-                    <li class="props__item"><a class="props__header" href="#"><span>Характеристики</span>
-                        <div class="props__icon">
-                          <svg class="icon icon_fill_black">
-                            <use xlink:href="assets/images/icons/sprite.svg#arrow-bottom"></use>
-                          </svg>
-                        </div></a>
-                      <ul class="sub-props__list">
-                        <li class="sub-props__item">
-                          <input class="sub-props__checkbox" type="checkbox" id="checkbox-1">
-                          <label for="checkbox-1">
-                            <div class="checkbox-fake"> </div>
-                          </label><span>Характеристика 1</span>
-                        </li>
-                        <li class="sub-props__item">
-                          <input class="sub-props__checkbox" type="checkbox" id="checkbox-2">
-                          <label for="checkbox-2">
-                            <div class="checkbox-fake"> </div>
-                          </label><span>Характеристика 2</span>
-                        </li>
-                        <li class="sub-props__item">
-                          <input class="sub-props__checkbox" type="checkbox" id="checkbox-3">
-                          <label for="checkbox-3">
-                            <div class="checkbox-fake"> </div>
-                          </label><span>Характеристика 3</span>
-                        </li>
-                      </ul>
+                    <li class="props__item"><a class="props__header" href="#">Характеристики </a>
+                      <div class="props__wrapper">
+                        <div class="props__content">
+                          <ul class="sub-props__list">
+                            <li class="sub-props__item" data-price="11111">
+                              <input class="sub-props__checkbox" type="checkbox" id="checkbox-1">
+                              <label class="sub-props__label" for="checkbox-1">
+                                <div class="checkbox-fake"> </div><span>Характеристика 1</span>
+                              </label>
+                            </li>
+                            <li class="sub-props__item" data-price="22222">
+                              <input class="sub-props__checkbox" type="checkbox" id="checkbox-2">
+                              <label class="sub-props__label" for="checkbox-2">
+                                <div class="checkbox-fake"> </div><span>Характеристика 2</span>
+                              </label>
+                            </li>
+                            <li class="sub-props__item" data-price="33333">
+                              <input class="sub-props__checkbox" type="checkbox" id="checkbox-3">
+                              <label class="sub-props__label" for="checkbox-3">
+                                <div class="checkbox-fake"> </div><span>Характеристика 3</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </li>
-                    <li class="props__item"><a class="props__header" href="#"><span>Информация</span>
-                        <div class="props__icon">
-                          <svg class="icon icon_fill_black">
-                            <use xlink:href="assets/images/icons/sprite.svg#arrow-top"></use>
-                          </svg>
-                        </div></a></li>
+                    <li class="props__item"><a class="props__header" href="#">Информация</a>
+                      <div class="props__wrapper">
+                        <div class="props__content">
+                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique officiis enim labore error at nam. Delectus perferendis voluptatibus id odio unde voluptas harum possimus vitae distinctio, sit officia magni, animi, totam reprehenderit exercitationem. Dolores ipsam, eos suscipit, nisi mollitia magni corporis enim reiciendis odit cumque voluptas, blanditiis explicabo. Incidunt, perferendis.</p>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -161,7 +161,7 @@
         </div>
       </div>
     </section>
-    <section class="todo">
+    <section class="todo-list">
       <div class="container">
         <div class="todo">
           <div class="todo__header">Заголовок</div>
@@ -214,5 +214,6 @@
     </footer>
   </body>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/scripts/bundle.js" defer></script>
 </html>

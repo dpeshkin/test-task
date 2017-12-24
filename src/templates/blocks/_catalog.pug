@@ -19,31 +19,30 @@ section.catalog
             .props
               ul.props__list
                 li.props__item
-                  a(href='#').props__header
-                    span Характеристики
-                    .props__icon
-                      +icon("icon_fill_black","arrow-bottom")
-                  ul.sub-props__list
-                    li.sub-props__item
-                      input(type='checkbox', id='checkbox-1', class='sub-props__checkbox')
-                      label(for='checkbox-1')
-                        .checkbox-fake 
-                      span Характеристика 1
-                    li.sub-props__item
-                      input(type='checkbox', id='checkbox-2', class='sub-props__checkbox')
-                      label(for='checkbox-2')
-                        .checkbox-fake 
-                      span Характеристика 2
-                    li.sub-props__item
-                      input(type='checkbox', id='checkbox-3', class='sub-props__checkbox')
-                      label(for='checkbox-3')
-                        .checkbox-fake 
-                      span Характеристика 3
+                  a(href='#').props__header Характеристики 
+                  .props__wrapper
+                    .props__content
+                      ul.sub-props__list
+                        li.sub-props__item(data-price="11111")
+                          input(type='checkbox', id='checkbox-1', class='sub-props__checkbox')
+                          label(for='checkbox-1').sub-props__label
+                            .checkbox-fake 
+                            span Характеристика 1
+                        li.sub-props__item(data-price="22222")
+                          input(type='checkbox', id='checkbox-2', class='sub-props__checkbox')
+                          label(for='checkbox-2').sub-props__label
+                            .checkbox-fake 
+                            span Характеристика 2
+                        li.sub-props__item(data-price="33333")
+                          input(type='checkbox', id='checkbox-3', class='sub-props__checkbox')
+                          label(for='checkbox-3').sub-props__label
+                            .checkbox-fake 
+                            span Характеристика 3
                 li.props__item
-                    a(href='#').props__header
-                      span Информация
-                      .props__icon
-                        +icon("icon_fill_black","arrow-top")
+                  a(href='#').props__header Информация
+                  .props__wrapper
+                    .props__content
+                      p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique officiis enim labore error at nam. Delectus perferendis voluptatibus id odio unde voluptas harum possimus vitae distinctio, sit officia magni, animi, totam reprehenderit exercitationem. Dolores ipsam, eos suscipit, nisi mollitia magni corporis enim reiciendis odit cumque voluptas, blanditiis explicabo. Incidunt, perferendis.
           .item__price
             .price 0 Р.
             button.button Заказать

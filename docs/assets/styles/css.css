@@ -630,7 +630,11 @@ label {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
   color: #000000;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  background: url(../images/icons/arrow-down.png) no-repeat calc(100% - 20px) center; }
+
+.active .props__header {
+  background-image: url(../images/icons/arrow-up.png); }
 
 .props__icon {
   margin-left: auto;
@@ -647,13 +651,30 @@ label {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 15px;
-  font-size: 16px; }
+  margin-bottom: 15px; }
 
 .sub-props__checkbox {
   display: none; }
   .sub-props__checkbox:checked + label .checkbox-fake::after {
     display: block; }
+
+.sub-props__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px; }
+
+.props__wrapper {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease; }
+
+.props__content {
+  padding-bottom: 25px; }
 
 .checkbox-fake {
   width: 30px;
@@ -753,7 +774,7 @@ label {
 .service__text p {
   margin-bottom: 0; }
 
-.todo {
+.todo-list {
   padding: 60px 0 100px; }
 
 .todo__header {

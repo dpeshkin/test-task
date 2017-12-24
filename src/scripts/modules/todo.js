@@ -1,4 +1,4 @@
-const todo = function() {
+const todo = () => {
   const list = $(".todo");
   const addButton = "button.button_add";
   const changeButton = "button.button_change";

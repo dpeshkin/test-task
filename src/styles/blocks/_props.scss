@@ -10,6 +10,12 @@
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
   color: $color-black;
   margin-bottom: 30px;
+  background: url(../images/icons/arrow-down.png) no-repeat calc(100% - 20px)
+    center;
+}
+
+.active .props__header {
+  background-image: url(../images/icons/arrow-up.png);
 }
 .props__icon {
   margin-left: auto;
@@ -25,7 +31,6 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  font-size: 16px;
 }
 
 .sub-props__checkbox {
@@ -35,4 +40,20 @@
       display: block;
     }
   }
+}
+
+.sub-props__label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.props__wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+
+.props__content {
+  padding-bottom: 25px;
 }
